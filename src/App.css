@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +35,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.button {
+  height: 40px;
+  width: 40px;
+  color: green;
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+  border: 0;
+  background-color: rgb(107, 210, 139);
+  margin: 0 10px 0 10px;
+  transition: background-color 0.3s ease-in;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(61, 114, 78);
+  color: white;
+  transition: background-color 0.3s ease-in;
+}
+
+.long-button {
+  width: 80px;
+  background-color: yellow;
+}
+
+.long-button:hover {
+  background-color: rgb(255, 191, 0)
 }
